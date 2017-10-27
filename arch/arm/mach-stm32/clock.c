@@ -371,7 +371,8 @@ void __init stm32_clock_init(void)
 		hse_hz = 12000000;
 		break;
 	case PLATFORM_STM32_STM32F7_DISCO:
-		hse_hz = 25000000;
+		//hse_hz = 25000000;
+		hse_hz = 16000000;
 		break;
 	case PLATFORM_STM32_STM_DISCO:
 		hse_hz = 8000000;

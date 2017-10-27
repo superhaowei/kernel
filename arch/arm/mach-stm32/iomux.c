@@ -445,6 +445,19 @@ void __init stm32_iomux_init(void)
 		gpio_dsc.pin  = 10;
 		stm32f2_gpio_config(&gpio_dsc, STM32F2_GPIO_ROLE_USART1);
 #endif
+
+#if defined(CONFIG_STM32_USART2)
+
+		gpio_dsc.port = 0;
+		gpio_dsc.pin  = 2;
+		stm32f2_gpio_config(&gpio_dsc, STM32F2_GPIO_ROLE_USART2);
+
+		gpio_dsc.port = 0;
+		gpio_dsc.pin  = 3;
+		stm32f2_gpio_config(&gpio_dsc, STM32F2_GPIO_ROLE_USART2);
+
+#endif
+
 #if defined(CONFIG_STM32_USART3)
 		gpio_dsc.port = 2;
 		gpio_dsc.pin  = 10;
@@ -508,7 +521,7 @@ void __init stm32_iomux_init(void)
 #endif
 
 uartdone:
-
+#if 0
 #if defined(CONFIG_STM32_MAC)
 		do {
 			static struct stm32f2_gpio_dsc mii_gpio[] = {
@@ -542,6 +555,7 @@ uartdone:
 				}
 			}
 		} while (0);
+#endif
 #endif
 
 #if defined(CONFIG_STM32_SPI1)

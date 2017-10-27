@@ -230,7 +230,7 @@ static void __init stm32_init(void)
 	/*
 	 * Relocate SRAM code
 	 */
-	stm32_sram_relocate();
+	//stm32_sram_relocate();
 
 	/*
 	 * Configure the IOMUXes of STM32
