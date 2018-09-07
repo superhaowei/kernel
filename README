@@ -1,8 +1,5 @@
-This is the source tree of the uClinux kernel that is part of the Linux
-Cortex-M distribution maintained by Emcraft Systems.
-
-The list of Cortex-M3 and Cortex-M4 MCUs and boards supported by this
-version of Linux Cortex-M is available at http://www.emcraft.com.
-
-If you want to contribute code to this source tree, please email your
-patches to super_chenghaowei@163.com.
+第一步：拉代码
+第二步：安装编译器
+  gcc-arm-none-eabi-6-2017-q2-update-src.tar
+第三步：编译
+  
